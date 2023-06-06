@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="673.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="movie.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="signIn_form" layoutX="171.0" layoutY="128.0" prefHeight="502.0" prefWidth="673.0" styleClass="bg-form" stylesheets="@designLogin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="signIn_close" layoutX="593.0" layoutY="9.0" mnemonicParsing="false" onAction="#signIn_close" prefHeight="36.0" prefWidth="80.0" styleClass="close" stylesheets="@designLogin.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+               </graphic>
+            </Button>
+            <Button fx:id="signIn_minimize" layoutX="511.0" layoutY="2.0" mnemonicParsing="false" onAction="#signIn_minimize" prefHeight="36.0" prefWidth="80.0" styleClass="close" stylesheets="@designLogin.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="MINUS" size="1.2em" />
+               </graphic>
+            </Button>
+            <FontAwesomeIcon fill="#ff2200" glyphName="USER" layoutX="299.0" layoutY="120.0" size="8EM" />
+            <Label layoutX="266.0" layoutY="134.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Constantia" size="46.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signIn_username" layoutX="223.0" layoutY="236.0" onAction="#signin" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@designLogin.css" />
+            <TextField fx:id="signIn_password" layoutX="223.0" layoutY="287.0" onAction="#signin" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@designLogin.css" />
+            <Button fx:id="signIn_loginBtn" layoutX="281.0" layoutY="343.0" mnemonicParsing="false" onAction="#signin" prefHeight="64.0" prefWidth="104.0" styleClass="login-btn" stylesheets="@designLogin.css" text="Login">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="signIn_createAccount" layoutX="245.0" layoutY="438.0" onAction="#switchForm" prefHeight="36.0" prefWidth="177.0" text="Create a new account">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signUp_form" layoutX="-4.0" layoutY="5.0" prefHeight="507.0" prefWidth="673.0" styleClass="bg-form" stylesheets="@designLogin.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="signUp_minimize" layoutX="511.0" layoutY="2.0" mnemonicParsing="false" onAction="#signUp_minimize" prefHeight="36.0" prefWidth="80.0" styleClass="minimize" stylesheets="@designLogin.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="MINUS" size="1.2em" />
+               </graphic>
+            </Button>
+            <Button fx:id="signUp_close" layoutX="591.0" layoutY="2.0" mnemonicParsing="false" onAction="#signUp_close" prefHeight="36.0" prefWidth="80.0" styleClass="minimize" stylesheets="@designLogin.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" size="1.2em" />
+               </graphic>
+            </Button>
+            <FontAwesomeIcon fill="#ff2200" glyphName="USER_PLUS" layoutX="296.0" layoutY="102.0" size="8EM" />
+            <Label layoutX="263.0" layoutY="116.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Constantia" size="46.0" />
+               </font>
+            </Label>
+            <TextField fx:id="signUp_username" layoutX="233.0" layoutY="236.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@designLogin.css" />
+            <TextField fx:id="signUp_password" layoutX="233.0" layoutY="287.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@designLogin.css" />
+            <Button fx:id="signUp_btn" layoutX="281.0" layoutY="343.0" mnemonicParsing="false" onAction="#signup" prefHeight="64.0" prefWidth="104.0" styleClass="login-btn" stylesheets="@designLogin.css" text="Sign Up">
+               <font>
+                  <Font name="Arial Black" size="30.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="signUp_alreadyHaveAccount" layoutX="238.0" layoutY="441.0" onAction="#switchForm" prefHeight="36.0" prefWidth="209.0" text="Already have an account?">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Hyperlink>
+            <TextField fx:id="signUp_email" layoutX="233.0" layoutY="190.0" prefHeight="30.0" prefWidth="220.0" promptText="Email Address" styleClass="textfield" stylesheets="@designLogin.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

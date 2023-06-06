@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+
+
+
+.bg-white{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 8,0,0,0);
+    
+    
+}
+
+
+.label-info{
+    -fx-border-color: #ae2d3c;
+    -fx-border-radius: 0px 5px 0px 0px;
+    -fx-border-width: .8px;
+    -fx-padding: .8px;
+}
